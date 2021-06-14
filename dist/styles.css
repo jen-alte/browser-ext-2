@@ -1,0 +1,143 @@
+.container {
+	margin: 1.5em;
+	text-align: center;
+	border:3px solid lightblue;
+	border-radius: 16%;
+}
+
+.result {
+	margin-top: 1em;
+}
+
+.clear-btn {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*basic css*/
+/* courtesy of: https://github.com/vladocar/Basic.css */
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--sans: 16pt Arial, Helvetica, sans-serif;
+	--mono: Courier, monospace;
+	--c1: hsl(172, 86%, 58%);
+	--c2: rgb(242, 243, 155);
+	--c3: hsl(189, 42%, 28%);
+	--c4: rgb(255, 255, 255);
+	--c5: hsl(244, 69%, 29%);
+	--m1: 8px;
+	--rc: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--c2: #0f054b;
+		--c3: hsl(210, 74%, 20%);
+		--c4: #effcaa;
+	}
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* General settings */
+
+body {
+	margin: 20px;
+	font: var(--sans);
+	font-weight: 200;
+	font-style: italic;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	background-color: var(--c3);
+	color: var(--c4);
+	min-width: 300px;
+}
+img,
+iframe {
+	max-width: 50%;
+}
+
+a {
+	color: var(--c1);
+	text-decoration: underline;
+}
+
+a:hover {
+	color: red;
+	text-decoration: overline;
+}
+
+/* Headlines */
+
+h1,
+h2 {
+	margin: 0.25em 0.25em;
+	font-weight: 800;
+}
+
+h1 {
+	font-size: 1.5em;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 1em;
+	line-height: 1;
+}
+
+/* Rounded Corners*/
+
+input,
+button,
+img {
+	border-radius: var(--rc);
+	margin: 15px;
+}
+
+/* Forms */
+
+input,
+select,
+textarea {
+	font-size: 1em;
+	color: var(--c4);
+	background: var(--c2);
+	border: 3px solid white;
+	padding: 0.2em;
+}
+
+label {
+	font-weight: lighter;
+	text-align: right;
+}
+
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+	-webkit-appearance: none;
+	font-size: 1em;
+	display: inline-block;
+	color: var(--c5);
+	background: var(--c1);
+	border: 3px solid white;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	text-align: left;
+}
+
+button:hover,
+button:focus,
+input:hover,
+textarea:hover,
+select:hover {
+	opacity: 0.25;
+}
